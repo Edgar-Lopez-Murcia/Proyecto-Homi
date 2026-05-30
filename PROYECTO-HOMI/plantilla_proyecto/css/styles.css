@@ -95,6 +95,8 @@ a:hover { color: var(--color-secundario); }
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
+
+
 /* Logo */
 .header-logo {
   display: flex;
@@ -215,6 +217,9 @@ a:hover { color: var(--color-secundario); }
    ============================================================ */
 .hero {
   /* ✏️ Cambia el gradiente por los colores de tu proyecto */
+  background-image: url(../img/inmueble2.jpg);
+  object-fit: cover;
+  object-position: center;
   background: linear-gradient(135deg, var(--color-claro) 0%, #1e3a5f 100%);
   color: white;
   padding: 100px 32px;
@@ -540,6 +545,7 @@ a:hover { color: var(--color-secundario); }
   align-items: center;
 }
 
+
 .mision-texto h2 {
   font-size: clamp(24px, 3vw, 36px);
   font-weight: 800;
@@ -558,6 +564,9 @@ a:hover { color: var(--color-secundario); }
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 900px;
+  margin: 40px auto 0;
+  
 }
 
 .valor {
@@ -567,8 +576,13 @@ a:hover { color: var(--color-secundario); }
   border-radius: 0 var(--radio) var(--radio) 0;
   padding: 16px 20px;
   border-radius: 13px;
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-hover);
 }
-
+.valor:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(67, 6, 235, 0.4);
+}
 .valor h3 { font-size: 15px; font-weight: 700; color: var(--color-oscuro); margin-bottom: 4px; }
 .valor p  { font-size: 13.5px; color: var(--color-texto-suave); }
 
@@ -601,7 +615,7 @@ a:hover { color: var(--color-secundario); }
   align-items: center;
   gap: 10px;
   border-left: 8px solid #0b2d63;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   color: black
 }
 
@@ -609,6 +623,8 @@ a:hover { color: var(--color-secundario); }
   background-color: rgb(183, 215, 216);
   transform: translateY(-3px);
   box-shadow: var(--sombra-hover);
+  scale: (1.1);
+  transform: rotate(1440deg);
 }
 .miembro-avatar {
   width: 80px;
