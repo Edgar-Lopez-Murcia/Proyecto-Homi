@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Homi | Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="header-logo">
+      <!--
+        ✏️ Opción A: Logo con imagen
+        <img src="img/logo.png" alt="Logo mi proyecto" class="logo-img">
+        ✏️ Opción B: Solo texto (más fácil para empezar)
+      -->
+      <span class="logo-icono"><a href="INDEX~1.HTM"><img src="img/imagen_logo.png" alt="logo HOMI" class="logo-img"></a></span>
+      
+    </div>
+
+    <!-- Botón hamburguesa — JavaScript lo activará en la próxima sesión -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav-menu" class="nav-menu">
+      <!-- class="activo" va en el enlace de la página actual -->
+      <a href="INDEX~1.HTM" class="activo">Inicio</a>
+      <a href="PRODUC~1.HTM">Inmuebles</a>
+      <a href="NOSOTR~1.HTM">Nosotros</a>
+      <a href="CONTAC~1.HTM">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN — Contenido único de esta página
+       ============================================================ -->
+  <main>
+
+    <!-- --------------------------------------------------------
+         HERO — Sección principal de bienvenida
+         -------------------------------------------------------- -->
+    <section class="hero" id="hero">
+      <div class="hero-contenido">
+        <!--
+          ✏️ Personaliza: Título llamativo de tu negocio o proyecto
+        -->
+        <h1>Bienvenido a<br><span class="hero-destacado">Homi</span></h1>
+        <p>Tu nuevo hogar está más cerca de lo que imaginas. Encuéntralo en este lugar </p>
+        <!--
+          ✏️ El botón CTA lleva a la página principal de tu proyecto
+          (productos, servicios, cursos, etc.)
+        -->
+        <div class="hero-acciones">
+          <a href="PRODUC~1.HTM" class="btn btn-primario">Ver inmuebles </a>
+          <a href="NOSOTR~1.HTM" class="btn btn-secundario">Conócenos</a>
+        </div>
+      </div>
+      <!--
+        ✏️ Opción: Agrega una imagen hero
+        <img src="img/hero.jpg" alt="Hero" class="hero-imagen">
+      -->
+    </section>
+
+    <!-- --------------------------------------------------------
+         DESTACADOS — Grid de tarjetas (productos/servicios/cursos)
+         El id="grid-tarjetas" lo usará JavaScript para cargar
+         tarjetas dinámicamente desde un array de datos
+         -------------------------------------------------------- -->
+    <section class="seccion-tarjetas" id="destacados">
+      <div class="seccion-header">
+        <h2>Nuestros Inmuebles Destacados</h2>
+        <!--
+          ✏️ Cambia "Nuestros Productos" según tu proyecto:
+          "Nuestros Servicios", "Cursos Disponibles", "Nuestro Menú"
+        -->
+        <p>aqui encontraras los mejores inmuebles </p>
+      </div>
+
+      <!--
+        El id="grid-tarjetas" es importante:
+        JavaScript usará este id para inyectar tarjetas dinámicamente.
+        Por ahora, pon el contenido manualmente.
+      -->
+      <div class="grid-tarjetas" id="grid-tarjetas">
+
+        <!-- ✏️ Copia y pega este bloque para cada tarjeta (mínimo 6) -->
+        <article class="tarjeta" data-id="1">
+          <img src="img/departamento1.webp"
+               alt="Producto 1"
+               class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Depa Moderno de 3 Habitaciones</h3>
+            <p class="tarjeta-desc">Espacio, privacidad y diseño vanguardista distribuidos en tres niveles independientes.</p>
+            <div class="tarjeta-pie">
+              <!--
+                ✏️ Si es tienda: muestra precio
+                Si es servicios: muestra "Solicitar"
+                Si es cursos: muestra duración
+              -->
+              <span class="tarjeta-precio">$1'357.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="2">
+          <img src="img/inmueble1.jpg"
+               alt="Producto 2"
+               class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Casa de Rural de Dos Pisos</h3>
+            <p class="tarjeta-desc">Amplia casa de campo en dos plantas con vistas despejadas y jardín natural.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$1'500.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="3">
+          <img src="img/departamento2.jpg"
+               alt="Producto 3"
+               class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Departamento Cerca del Metro</h3>
+            <p class="tarjeta-desc">Ubicación estratégica y transporte rápido en un departamento moderno y funcional.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$950.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="4">
+          <img src="img/inmueble2.jpg"
+               alt="Producto 4"
+               class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Departamento con Vista Boscosa</h3>
+            <p class="tarjeta-desc">Despierta cada mañana con la tranquilidad y frescura de una hermosa vista al bosque.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$1'400.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="5">
+          <img src="img/departamento3.jpg"
+               alt="Producto 5"
+               class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Estudio con Balcón</h3>
+            <p class="tarjeta-desc">El hogar ideal para profesionales modernos que buscan comodidad y aire libre.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$850.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="6">
+          <img src="img/inmueble3.avif"
+               alt="Producto 6"
+               class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Casa moderna con piscina </h3>
+            <p class="tarjeta-desc">La combinación perfecta de armonia y tu propio oasis de descanso.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$2'340.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /grid-tarjetas -->
+
+      <div class="seccion-cta">
+        <a href="PRODUC~1.HTM" class="btn btn-primario">Ver todos los Inmuebles</a>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------
+         SECCIÓN ABOUT (mini) — breve presentación
+         -------------------------------------------------------- -->
+    <section class="seccion-about" id="about">
+      <div class="about-texto">
+        <!--
+          ✏️ Versión corta de "Nosotros" — 2-3 frases y un enlace
+        -->
+        <h2>¿Quiénes somos?</h2>
+        <p>HOMI es una plataforma digital que facilita la búsqueda y publicación de viviendas en arriendo de forma segura y organizada. Conectamos arrendadores y arrendatarios mediante herramientas confiables y fáciles de usar.</p>
+        <a href="NOSOTR~1.HTM" class="btn btn-secundario">Conoce más</a>
+      </div>
+      <div class="about-stats">
+        <!-- ✏️ Personaliza los números según tu proyecto -->
+        <div class="stat">
+          <span class="stat-numero">+10.000</span>
+          <span class="stat-label">Clientes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-numero">3</span>
+          <span class="stat-label">Años</span>
+        </div>
+        <div class="stat">
+          <span class="stat-numero">+500</span>
+          <span class="stat-label">Inmuebles</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — Copia este bloque IGUAL en todas las páginas
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-marca">
+        <span class="logo-icono"><img src="img/imagen_logo.png" alt="logo HOMI"></span>
+        <p>Es una pagina web que conecta arrendadores e inquilinos de forma rápida y confiable para facilitar la búsqueda y publicación de inmuebles</p>
+      </div>
+      <nav class="footer-nav">
+        <h4>Páginas</h4>
+        <a href="INDEX~1.HTM">Inicio</a>
+        <a href="PRODUC~1.HTM">Inmueble</a>
+        <a href="NOSOTR~1.HTM">Nosotros</a>
+        <a href="CONTAC~1.HTM">Contacto</a>
+      </nav>
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>Garzón, Huila</p>
+        <p>320 3735 367</p>
+        <p>info@homi.co</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 Homi — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!--
+    JavaScript irá aquí en la próxima sesión:
+    <script src="js/main.js"></script>
+  -->
+
+</body>
+</html>
+
+

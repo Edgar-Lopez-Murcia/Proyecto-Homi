@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ Cambia el título: "Productos | Mi Tienda" o "Servicios | Mi Empresa" -->
+  <title>Inmuebles | Homi</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — Igual en todas las páginas
+       Cambia class="activo" al enlace "Productos"
+       ============================================================ -->
+  <header class="header">
+    <div class="header-logo">
+          <span class="logo-icono"><img src="img/imagen_logo.png" alt="logo HOMI"></span>
+    </div>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="INDEX~1.HTM">Inicio</a>
+      <a href="PRODUC~1.HTM" class="activo">Productos</a>
+      <a href="NOSOTR~1.HTM">Nosotros</a>
+      <a href="CONTAC~1.HTM">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- --------------------------------------------------------
+         PAGE HEADER — Título de la página
+         -------------------------------------------------------- -->
+    <div class="page-header">
+      <!-- ✏️ Personaliza el título y descripción -->
+      <p class="breadcrumb"><a href="index.html">Inicio</a> / Inmuebles</p>
+      <h1>Nuestros Inmuebles</h1>
+      <p>Encuentra tu lugar</p>
+    </div>
+
+    <!-- --------------------------------------------------------
+         CATÁLOGO COMPLETO
+         id="grid-tarjetas" lo usará JavaScript para cargar
+         todos los productos desde un array de datos
+         -------------------------------------------------------- -->
+    <section class="seccion-tarjetas">
+      <div class="grid-tarjetas" id="grid-tarjetas">
+
+        <!-- ✏️ Copia y pega este bloque para cada producto -->
+        <!-- Mínimo 9 productos en la página de catálogo -->
+
+        <article class="tarjeta" data-id="1">
+          <img src="img/inmueble2.jpg"
+               alt="Producto 1" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Departamento con Vista Boscosa</h3>
+            <p class="tarjeta-desc">Despierta cada mañana con la tranquilidad y frescura de una hermosa vista al bosque</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$1'400.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="2">
+          <img src="img/departamento1.webp"
+               alt="Producto 2" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Depa Moderno de 3 Habitaciones</h3>
+            <p class="tarjeta-desc">Espacio, privacidad y diseño vanguardista distribuidos en tres niveles independientes</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$1'357.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="3">
+          <img src="img/Cabañas1.jpg"
+               alt="Producto 3" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Cabaña de Diseño Simple en Paisaje Natural</h3>
+            <p class="tarjeta-desc">Un refugio contemporáneo que prioriza la luz natural, la madera vista y la calma absoluta.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$750.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="4">
+          <img src="img/local1.jpg"
+               alt="Producto 4" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Un local de diseño funcional y sobrio</h3>
+            <p class="tarjeta-desc">Espacio comercial de líneas limpias creado para ofrecer una experiencia cómoda para enfocarse en la atención al cliente</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$900.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="5">
+          <img src="img/departamento2.jpg "
+               alt="Producto 5" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Casa de Rural de Dos Pisos</h3>
+            <p class="tarjeta-desc">Amplia casa de campo en dos plantas con vistas despejadas y jardín natural.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$1'500.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="6">
+          <img src="img/lugar-de-estudio.jpg"
+               alt="Producto 6" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Un cuarto de estudio con diseño eficiente</h3>
+            <p class="tarjeta-desc">Un ambiente de arquitectura simple y funcional pensado para el estudio y comodidad total.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$580.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="7">
+          <img src="img/casa-rural.webp"
+               alt="Producto 7" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Casa rural </h3>
+            <p class="tarjeta-desc"> Una propiedad construida para ofrecer total tranquilidady  con espacios abiertos que ayudan a descansar de verdad.</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$745.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="8">
+          <img src="img/departamento2.jpg"
+               alt="Producto 8" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Departamento Cerca del Metro</h3>
+            <p class="tarjeta-desc">Ubicación estratégica y transporte rápido en un departamento moderno y funcional</p>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$950.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-id="9">
+          <img src="img/depa-4.jpg"
+               alt="Producto 9" class="tarjeta-img">
+          <div class="tarjeta-info">
+            <h3 class="tarjeta-nombre">Departamento con diseño práctico y luminoso.</h3>
+            <div class="tarjeta-desc">Una vivienda que aprovecha al máximo cada metro cuadrado y facilita el día a día.</div>
+            <div class="tarjeta-pie">
+              <span class="tarjeta-precio">$950.000</span>
+              <button class="btn-accion">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /grid-tarjetas -->
+    </section>
+
+  </main>
+
+  <!-- Footer — igual en todas las páginas -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-marca">
+        <span class="logo-icono"><img src="img/imagen_logo.png" alt="logo HOMI"></span>
+        <p>Es una pagina web que conecta arrendadores e inquilinos de forma rápida y confiable para facilitar la búsqueda y publicación de inmuebles</p>
+      </div>
+      <nav class="footer-nav">
+        <h4>Páginas</h4>
+        <a href="INDEX~1.HTM">Inicio</a>
+        <a href="PRODUC~1.HTM">Inmuebles</a>
+        <a href="NOSOTR~1.HTM">Nosotros</a>
+        <a href="CONTAC~1.HTM">Contacto</a>
+      </nav>
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>Ciudad, Departamento</p>
+        <p>320 3735 367</p>
+        <p>info@homi.co</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 Homi — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
